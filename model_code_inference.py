@@ -78,7 +78,7 @@ class Attention(nn.Module):  # implementation from https://github.com/microsoft/
             w = w / math.sqrt(v.size(-1))
         nd, ns = w.size(-2), w.size(-1)
         b = self.bias[:, :, ns - nd:ns, :ns]
-        w = w * b - 1e10 * (1 - b)  # 前面的元素不能注意到后面的向量，所以强制其注意力分数为0
+        w = w * b - 1e10 * (1 - b)  
         if len_kv is not None:
             # _len = torch.arange(96)， _len[None, :].unsqueeze(1).unsqueeze(2).shape
             _len = torch.arange(k.size(-1), device=k.device)
