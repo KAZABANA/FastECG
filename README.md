@@ -11,6 +11,7 @@
 * First, you should apply and download the CODE-15% dataset or the full CODE dataset
 * For the full CODE dataset, you should collect all the ECG signals and labels in a h5py files (CODEfull_data.hdf5, CODEfull_labels.hdf5). There should be a (N,12,1,length) matrix and a (N,6) matrix in the CODEfull_data.hdf5 and CODEfull_labels.hdf5, respectively. N is the number of ECG recordings, length is the length of the recordings.
 * Then, you can use
-* ``` nohup torchrun --nproc_per_node=2 main.py --mode 'pretrain' --model_config 'base'> pretrain_ecg_code.log 2>&1 & to pre-train a backbone model for yourself. If you have more than 2 GPU, please modify the parameter 'nproc_per_node'.
+``` nohup torchrun --nproc_per_node=2 main.py --mode 'pretrain' --model_config 'base'> pretrain_ecg_code.log 2>&1 &
+to pre-train a backbone model for yourself. If you have more than 2 GPU, please modify the parameter 'nproc_per_node'.
 # FastECG Fine-Tuning and Evaluation on the Downsteam Datasets.
 * 
