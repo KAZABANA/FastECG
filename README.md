@@ -7,5 +7,5 @@
 * quick download the four downsteam datasets: wget -r -N -c -np https://physionet.org/files/challenge-2021/1.0.3/
 * The pretrained base backbone (base_checkpoint.pkl). The medium and large backbones are too large to upload, we will provide the link to access them later on.
 * Requirements: you can use (pip install -r requirements.txt) to install all the related packages used in our paper.
-# FastECG pre-training on the CODE-15% or CODE-full datasets.
-# FastECG Fine-Tuning and Evaluation on the downsteam datasets.
+# FastECG Pre-Training on the CODE-15% or CODE-full Datasets.
+# FastECG Fine-Tuning and Evaluation on the Downsteam Datasets.
