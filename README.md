@@ -17,7 +17,7 @@ in the command window to pre-train a backbone model for yourself. If you have mo
 # FastECG Fine-Tuning and Evaluation on the Downsteam Datasets.
 * In this repo, we provide the backbones pre-trained by our team, so you can directly fine-tuned them on the downsteam datasets using the propsoed FastECG method.
 * First, you can use the function 'dataset_organize' in the datacollection.py to preprocess the four downsteam datasets.
-* Then, in the command window, you can the command below to reproduct the FastECG algorithm. The saved output file presents the performance of the algorithm.
+* Then, in the command window, you can the command below to reproduce the results of the FastECG algorithm. The saved output file presents the performance of the algorithm.
 ```
 nohup python -u main.py --model_config 'base' --finetune_label_ratio 0.05 --r 32 --seed 16 --device "cuda:0"> training_ecg_seed16_base.log 2>&1 &
 ```
