@@ -16,4 +16,4 @@ nohup torchrun --nproc_per_node=2 main.py --mode 'pretrain' --model_config 'base
 ```
 in the command window to pre-train a backbone model for yourself. If you have more than 2 GPU, please modify the parameter 'nproc_per_node'.
 # FastECG Fine-Tuning and Evaluation on the Downsteam Datasets.
-* 
+* In this repo, we provide the backbones pre-trained by our team, so you can directly fine-tuned them on the downsteam datasets using the propsoed FastECG method
