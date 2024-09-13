@@ -13,7 +13,7 @@ from torch.nn.parameter import Parameter
 from typing import List
 import random
 def get_drop_state(dropout_value=0.2):
-    r = random.random()  # 生成一个0到1之间的随机数
+    r = random.random()  
     if r < dropout_value:
         return 0
     else:
