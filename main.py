@@ -84,7 +84,7 @@ def Task_ECG(seed, root):
             exp_main(args)
 
 if __name__ == '__main__':
-    os.environ["CUDA_VISIBLE_DEVICES"] = '0,2'
+    #os.environ["CUDA_VISIBLE_DEVICES"] = '0,2'
     warnings.filterwarnings("ignore", message="invalid value encountered in divide")
     warnings.filterwarnings("ignore", message="divide by zero encountered in divide")
     warnings.filterwarnings("ignore", category=FutureWarning)
